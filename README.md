@@ -16,7 +16,7 @@ The algorithm terminates when the buffer is empty and the stack contains the sin
 
 At inference, the labeled dependency tree is not available and the transition operation &mdash; *LEFT-ARC*, *RIGHT-ARC* or *SHIFT* &mdash; is instead decided by a neural model. The features used by this neural model are calculated from the stack and buffer contents.
 
-Let $s_i$ be the $i^{th}$ node of the stack from the top, $b_i$ be the $i^{th}$ node of the buffer, $lc_j(x)$ be the $j^{th}$ leftmost child of node $x$, and $rc_j(x)$ be the $j^{th}$ rightmost child of node $x$. For node $x$, let $x.w$ be the corresponding word of $x$, $x.t$ be the part-of-speech, and $x.l$ be the label of the dependency arc between $x$ and the parent of $x$.
+Let s<sub>i</sub> be the i<sup>th</sup> node of the stack from the top, b<sub>i</sub> be the i<sup>th</sup> node of the buffer, lc<sub>j</sub>(x) be the j<sup>th</sup> leftmost child of node x, and rc<sub>j</sub>(x) be the j<sup>th</sup> rightmost child of node x. For node x, let x.w be the corresponding word of x, x.t be the part-of-speech, and x.l be the label of the dependency arc between x and the parent of x.
 
 As per the paper, the feature vector to the model is 48-dimensional and is calculated as follows &mdash;
 
